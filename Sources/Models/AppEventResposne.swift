@@ -23,7 +23,7 @@ public struct AppEventResposne: Codable {
         public let type: String
         
         /// app event id
-        public let id: Int
+        public let id: String
         
         /// app event
         public let attributes: Attributes
