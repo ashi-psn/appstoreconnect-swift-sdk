@@ -12,24 +12,21 @@ import Foundation
 // https://developer.apple.com/documentation/appstoreconnectapi/appeventresponse
 public struct AppEventResposne: Codable {
     /// App Event Object
-    public var data: AppEvent
+    public let data: AppEvent
     
     /// DocumentLinks
-    public var links: Links
-    
-    
+    public let links: Links
     
     /// AppEvent Object
     public struct AppEvent: Codable {
         
-        /// 
-        var type: String
+        public let type: String
         
         /// app event id
-        var id: Int
+        public let id: Int
         
         /// app event
-        var attributes: Attributes
+        public let attributes: Attributes
         
         /// app event details
         public struct Attributes: Codable {
@@ -55,31 +52,31 @@ public struct AppEventResposne: Codable {
             }
             
             public struct TerritorySchedules: Codable {
-                public var eventEnd: String
-                public var eventStart: String
-                public var publishStart: String
-                public var territories: [String]
+                public let eventEnd: String
+                public let eventStart: String
+                public let publishStart: String
+                public let territories: [String]
                 
             }
             
             /// app event title
-            public var referenceName: String
+            public let referenceName: String
             
             /// app event badge type
-            public var badge: Badge
+            public let badge: Badge
             
             /// app event deeplink
-            public var deepLink: String
+            public let deepLink: String
             
             // app event event stae
-            public var eventState: EventState
+            public let eventState: EventState
             
-            public var purchaseRequirement: PurchaseRequirement
-            public var primaryLocale: String
-            public var priority: Priority
-            public var purpose: Purpose
+            public let purchaseRequirement: PurchaseRequirement
+            public let primaryLocale: String
+            public let priority: Priority
+            public let purpose: Purpose
             
-            var territorySchedules: [TerritorySchedules]
+            public let territorySchedules: [TerritorySchedules]
         }
     }
     
