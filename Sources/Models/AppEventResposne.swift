@@ -77,6 +77,8 @@ public struct AppEventResposne: Codable {
             public let purpose: Purpose
             
             public let territorySchedules: [TerritorySchedules]
+            
+            public let archivedTerritorySchedules: [TerritorySchedules]
         }
     }
     
